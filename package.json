@@ -1,0 +1,36 @@
+{
+  "name": "json-tree-table",
+  "displayName": "JSON Tree Table Viewer",
+  "description": "View JSON as a hierarchical tree and table",
+  "version": "1.0.0",
+  "main": "./out/extension.js",
+  "scripts": {
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "package": "vsce package",
+    "publish": "vsce publish"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.75.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "jsonTreeTable.view",
+        "title": "JSON Tree Table Viewer"
+      }
+    ]
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.29",
+    "@types/vscode": "^1.100.0",
+    "typescript": "^5.8.3",
+    "vsce": "^3.16.0"
+  }
+}
